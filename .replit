@@ -1,0 +1,2 @@
+language = "undefined"
+run = "python atbash_cipher.py"

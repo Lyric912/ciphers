@@ -1,5 +1,5 @@
-# author:
-# date:
+# author: Lyric Marner
+# date: July 29, 2021
 
 # difficulty: easy
 
@@ -43,3 +43,27 @@
 #   2 - Remember that lists can be built up, meaning it may be useful to start with an empty list.
 #
 # WRITE DOWN THE STEPS BEFORE ATTEMPTING THE PROGRAM
+# Step 1: Write down the normal alphabet and the cipher alphabet. 
+lower_alphabet = 'abcdefghijklmnopqrstuvwxyz.,!?:\/;"\' 1234567890'
+lower_cipher_alphabet = lower_alphabet[::-1]
+
+upper_alphabet = lower_alphabet.upper()
+upper_cipher_alphabet = lower_cipher_alphabet.upper()
+
+plain_text = input('Enter a word or phrase: ')
+
+cipher_text = ''
+
+for i in plain_text:
+    if i in lower_alphabet:
+        position = lower_alphabet.find(i)
+        ciph_value = lower_cipher_alphabet[position]
+        cipher_text += ciph_value
+
+    else:
+        position = upper_alphabet.find(i)
+        ciph_value = upper_cipher_alphabet[position]
+        cipher_text += ciph_value
+    
+print('Original Text: ', plain_text)
+print('Cipher Text: ', cipher_text)

@@ -1,5 +1,5 @@
-# author:
-# date:
+# author: Lyric Marner
+# date: July 30, 2021
 
 # difficulty: medium
 
@@ -41,4 +41,14 @@
 #   3 - Print the result to the user.
 #
 # WRITE CODE BELOW #
+plain_text = input('Enter a word or phrase: ')
+key = input('Enter a key number (0-26): ')
 
+reg_alphabet = 'abcdefghijklmnopqrstuvwxyz'
+upper_reg_alphabet = reg_alphabet.upper()
+
+
+
+for i in plain_text:
+    if i in reg_alphabet 
+        key
